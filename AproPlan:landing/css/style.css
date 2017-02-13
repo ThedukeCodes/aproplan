@@ -1,0 +1,67 @@
+
+/* GENERAL*/
+
+/* This is the style for the entire body, we style the font (from Google font)  and its color */
+body {
+	font-family: "Lato", sans-serif;
+	color:#7d97ad;		
+}
+
+
+/* SPECIFIC*/
+/* From here on we style all the more detailed class such ad the title, logo, some specific font */
+.text-muted {
+	color: #bcbbbb;
+}
+.text-thin {
+	font-weight: 100;
+}
+.title-super {
+	font-size: 60px;
+}
+
+.title-logo{
+	margin-top: 20px;
+}
+
+
+/* Reponsiveness style starts from here */
+
+
+/* General for reponsive */
+/* Catch all to make sure my images, video, objects, etc do NEVER excess the width of any device*/
+img, embed, object, video{ 
+	max-width: 100%;
+}
+/* Make sure my button are always big enough (fictive, there is no button in this project)*/
+
+button {
+	min-width:48px; 
+	min-height:48px;
+}
+
+/* I did not change the grid system using media queries since I am using Bootsrap, have question about this though */
+
+/* Applies to smartphone  - portrait and landscape*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body { 
+		background-color: black;
+		font-size: 24px
+	}
+}
+/* Applies to Tablets- portrait and landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	body {
+		background-color: blue;
+		font-size: 24px;
+	}
+}
+/* Applies to Desktop */
+
+@media only screen  and (min-width : 1224px) {
+	body { 
+		background-color: white;
+		font-size: 18px;
+	}
+}
